@@ -8,3 +8,5 @@
 3) 3 sum (leetcode) 
 4) 4 sum (leetcode) 
 5) Count increasing subarrays (gfg)
+6) Remove duplicates in sorted array (leetcode) 
+
