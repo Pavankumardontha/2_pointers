@@ -18,11 +18,9 @@ public:
             if(next_to_take ==0 or a[next_to_take-1]!=a[next_to_take])
             {
                 /* 
-                We need to always take the first index. 
-                */
-                /* 
-                We have got a distinct element and we need to store it.we need to store next_to_take 
-                index element and store it at proper index.
+                condition - 1 : We need to always take the first element. 
+                condition - 2 : if condition- 2 is satisfied , then element at next_to_take index is distinct. We need to store next_to_take 
+                index element and store it at index_to_change_next index.
                 */
                 a[index_to_change_next]=a[next_to_take];
                 index_to_change_next++;
