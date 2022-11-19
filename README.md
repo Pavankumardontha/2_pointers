@@ -7,3 +7,4 @@
 2) 2 sum - 2 (leetcode)
 3) 3 sum (leetcode) 
 4) 4 sum (leetcode) 
+5) Count increasing subarrays (gfg)
