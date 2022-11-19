@@ -88,7 +88,7 @@ public:
     vector<vector<int>> threeSum(vector<int>& a)
     {
         /* 
-        1.for applying 2 pointers , our array should be sorted.
+        1.for applying 2 pointers , our array should be sorted.This is convinient case. Sometimes the array might not also be sorted and we can apply 2 pointers
         2. two pointers will only let you to find pair (a,b) consisting of 2 elements satisfying our constraints
         3. out of (a,b,c) we need to atleast fix one element and apply 2 pointers to search for other 2  
         */
