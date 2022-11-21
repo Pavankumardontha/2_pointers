@@ -10,5 +10,7 @@
 5) Count increasing subarrays (gfg)
 6) Remove duplicates in sorted array (leetcode) 
 7) Max consecutive ones (leetcode)
+8) Move zeros (leetcode)
+
 
 
