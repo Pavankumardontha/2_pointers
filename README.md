@@ -11,6 +11,8 @@
 6) Remove duplicates in sorted array (leetcode) 
 7) Max consecutive ones (leetcode)
 8) Move zeros (leetcode)
+9) Minimize maximum pair sum in array (leetcode) 
+10) Maximum distance between pair of values (leetcode)
 
 
 
