@@ -7,6 +7,7 @@
 2) 2 sum - 2 (leetcode)
 3) 3 sum (leetcode) 
 4) 4 sum (leetcode) 
+5) 3 sum closest (leetcode)
 5) Count increasing subarrays (gfg)
 6) Remove duplicates in sorted array (leetcode) 
 7) Max consecutive ones (leetcode)
