@@ -15,6 +15,8 @@
 9) Remove elements (leetcode)
 10) Minimize maximum pair sum in array (leetcode) 
 11) Maximum distance between pair of values (leetcode)
+12) Find the Index of the First Occurrence in a String (leetcode)
+
 
 
 
