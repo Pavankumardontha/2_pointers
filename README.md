@@ -19,6 +19,8 @@
 13) Valid Trinagle (both the approaches - leetcode)
 15) Remove duplicate elements in sorted array 2 (leetcode)
 16) K diff pairs in an array (leetcode)
+17) Append characters to make string subsequence (leetcode) 
+
 
 
 
