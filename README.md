@@ -17,6 +17,8 @@
 11) Maximum distance between pair of values (leetcode)
 12) Find the Index of the First Occurrence in a String (leetcode)
 13) Valid Trinagle (both the approaches)
+15) Remove duplicate elements in sorted array. 
+
 
 
 
