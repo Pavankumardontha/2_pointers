@@ -21,6 +21,7 @@
 16) K diff pairs in an array (leetcode)
 17) Append characters to make string subsequence (leetcode) 
 18) Maximum Matching of players with trainers (leetcode)
+19) Watering plants-2 (leetcode)
 
 
 
