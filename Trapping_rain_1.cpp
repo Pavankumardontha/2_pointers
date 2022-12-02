@@ -40,3 +40,44 @@ public:
 
 
 /* Approach - 2 : Using 2 pointers */
+class Solution {
+public:
+    int trap(vector<int>& a) 
+    {
+        
+        /*
+        first do container with most water question and then come to this problem.
+        In this problem also 2 pointer technique is applied even if the array is not sorted.
+        */
+        int n = a.size();
+        int start = 0;
+        int end = n - 1;
+        /*we need to extra variables apart from start and end and these are left_max and right_max*/
+        int left_max=0;
+        int right_max=0;
+        int ans = 0;
+        while(start<end)
+        {
+            if(a[start]>a[end])
+            {
+                // we need to decrement end but before decrementing we need to compare with right_max
+                if(a[end]>right_max)
+                right_max = a[end];
+                else
+                ans = ans + (right_max - a[end]); // here is where the answer lies
+                end--;
+            }
+            else
+            {
+                //we need to increment start but before incrementing we need to compare with left max
+                if(a[start]>left_max)
+                left_max = a[start];
+                else
+                ans = ans + (left_max - a[start]);
+                start++;
+            }
+        }
+        return ans;
+
+    }
+};
