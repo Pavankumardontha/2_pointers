@@ -24,7 +24,8 @@
 18) Maximum Matching of players with trainers (leetcode)
 19) Watering plants-2 (leetcode)
 20) Container with most water (leetcode)
-20) Trapping rain water - 1 (leetcode)
+21) Trapping rain water - 1 (leetcode)
+21) Rotate array (not exactly two pointers leetcode)
 
 
 
