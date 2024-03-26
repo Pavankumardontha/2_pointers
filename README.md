@@ -23,9 +23,10 @@
 16) K diff pairs in an array (leetcode)
 17) Append characters to make string subsequence (leetcode) 
 18) Maximum Matching of players with trainers (leetcode)
-19) Watering plants-2 (leetcode)
-20) Container with most water (leetcode)
-21) Trapping rain water - 1 (leetcode)
+19) watering plants (leetcode - not exactly 2 pointers)
+20) Watering plants-2 (leetcode)
+21) Container with most water (leetcode)
+22) Trapping rain water - 1 (leetcode)
 21) Rotate array (not exactly two pointers leetcode)
 
 
