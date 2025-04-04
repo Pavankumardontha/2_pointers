@@ -1,68 +1,54 @@
 class Solution {
 public:
-    vector<vector<int>> fourSum(vector<int>& a, int target) 
+    vector<vector<int>> fourSum(vector<int>& nums, int target) 
     {
-        /*
-        In 3 sum problem we have fixed c, same like there here we will fix 2 variables (c,d) and start
-        searching for (a,b) pair using two pointers.
-        */
-        int n = a.size();
+        int n = nums.size();
         vector<vector<int>> ans;
-        if(n<4)
-        return ans;
-        sort(a.begin(),a.end());
-        for(int i=0;i<n;i++)
+        sort(nums.begin(),nums.end());
+        for(int i=0;i<n-3;i++)
         {
-            /* to avoid duplicates */
-            if(i!=0 and a[i]==a[i-1])
+            // handle duplicate cases for starting element a[i]
+            if(i!=0 and nums[i] == nums[i-1])
             continue;
-            for(int j=i+1;j<n;j++)
+
+            for(int j=i+1;j<n-2;j++)
             {
-                /* to avoid duplicates */
-                if(j!=i+1 and a[j]==a[j-1])
+                // handle duplicate cases for second element a[j]
+                if(j!=i+1 and nums[j] == nums[j-1])
                 continue;
 
-                /* now we have fixed (c,d) and we will now look out for (a,b) in the range [j+1,n-1] using
-                2 pointers technique */
                 int start = j+1;
                 int end = n-1;
-                while(start < end)
+                while(start<end)
                 {
-                    long long int k = a[start] + a[end];
-                    long long int required_sum = (long long)target - a[i] - a[j];
-                    if(k == required_sum)
+                    long long int cur_sum = 1LL*nums[i] + 1LL*nums[j] + 1LL*nums[start] + 1LL*nums[end]; // just to avoid overflow. We multiple int by 1LL to make long long int
+                    if(cur_sum == target)
                     {
-                        /* we have got our combination */
-                        vector<int> choices;
-                        choices.push_back(a[i]);
-                        choices.push_back(a[j]);
-                        choices.push_back(a[start]);
-                        choices.push_back(a[end]);
-                        ans.push_back(choices);
-                        while(start+1<n and a[start]==a[start+1])
+                        vector<int> temp = {nums[i],nums[j],nums[start],nums[end]};
+                        ans.push_back(temp);
+                        while(start+1<n and nums[start] == nums[start+1])
                         start++;
-                        while(end-1>=0 and a[end-1]==a[end])
+                        while(end-1>=0 and nums[end] == nums[end-1])
                         end--;
                         start++;
                         end--;
                     }
-                    else if(k < required_sum)
+                    else if(cur_sum < target)
                     {
-                        while(start+1<n and a[start]==a[start+1])
+                        // we need to increment start to increase the cur_sum
+                        while(start+1<n and nums[start] == nums[start+1])
                         start++;
                         start++;
                     }
                     else
                     {
-                        while(end-1>=0 and a[end-1]==a[end])
+                        while(end-1>=0 and nums[end] == nums[end-1])
                         end--;
                         end--;
                     }
                 }
-
             }
         }
         return ans;
-        
     }
 };
