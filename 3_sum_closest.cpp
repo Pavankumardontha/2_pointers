@@ -1,52 +1,32 @@
 class Solution {
 public:
-    int threeSumClosest(vector<int>& a, int target) 
+    int threeSumClosest(vector<int>& nums, int target) 
     {
-        sort(a.begin(),a.end());
-        int n = a.size();
-        int min_difference = INT_MAX; // minimum different between current sum and target
-        int ans = a[0] + a[1] + a[2];
-        for(int i=0;i<n;i++)
+        int n = nums.size();
+        sort(nums.begin(),nums.end());
+        int closest_sum = nums[0]+ nums[1]+nums[2]; // this is the answer
+        int min_diff = INT_MAX; // overall minimum difference between the current sum and target
+        for(int i=0;i<n-2;i++)
         {
             int start = i+1;
             int end = n-1;
-            while(start<end)
+            while(start < end)
             {
-                int k = a[i] + a[start] + a[end]; // current sum 
-                if(k==target)
-                    return k;
-                else if (k<target)
+                int cur_sum = nums[i] + nums[start] + nums[end];
+                int cur_diff = abs(target - cur_sum);
+                if(cur_diff < min_diff)
                 {
-                    /* 
-                    we need to increase k so that we move close to the target and for that we need
-                    start pointer 
-                    */ 
-                    if(min_difference > abs(target-k))
-                    {
-                        /*
-                        if current difference which is abs(target-k) is less than min_difference we update
-                        min_difference and answer
-                        */
-                        min_difference = abs(target-k);
-                        ans = k;
-                    }
-                    start++;
+                    min_diff = cur_diff;
+                    closest_sum = cur_sum;
                 }
-                else 
-                {
-                    /*
-                    we need to decrement k so that we can move closer to the target 
-                    */
-                    if(min_difference > abs(target-k))
-                    {
-                        min_difference = abs(target-k);
-                        ans = k;
-                    }
-                    end--;
-                }
+                if(cur_sum == target)
+                return cur_sum;
+                else if(cur_sum < target)
+                start++;
+                else
+                end--;
             }
-
         }
-        return ans;
+        return closest_sum;
     }
 };
