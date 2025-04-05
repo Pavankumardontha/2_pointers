@@ -26,24 +26,36 @@
 
 class Solution {
 public:
-    int maxArea(vector<int>& a) 
+    int maxArea(vector<int>& height) 
     {
-        int l=0;
-        int r=a.size()-1;
-        int ans = 0; 
-        while(l<=r)
+        /*
+        This is simple 2 pointers problem with start and end coming in opposite directions. 
+        When to increment start and when to decrement end ?? 
+        Imagine we have an array [a[start]......a[end]]
+        if a[start] > a[end] -> This means we can decrement end because it has no chance to form the max area
+        if a[start] == a[end] -> we can increment start and decrement end 
+        if a[start] < a[end] -> We need to increment start
+        Take the decision of in which direction to move vonly considering a[start] and a[end] !!!
+        */
+        int n = height.size();
+        int start = 0;
+        int end = n-1;
+        int max_area = INT_MIN;
+        int cur_area;
+        while(start<end)
         {
-            ans = max(ans,min(a[l],a[r])*(r-l));
-            if(a[l]<a[r])
-            l++;
-            else if(a[r]<a[l])
-            r--;
-            else
+            cur_area = (end-start)*min(height[start],height[end]);
+            max_area = max(max_area,cur_area);
+            if(height[start] == height[end])
             {
-                l++;
-                r--;
+                start++;
+                end--;
             }
+            else if(height[start]>height[end])
+            end--;
+            else
+            start++;
         }
-        return ans;
+        return max_area;
     }
 };
