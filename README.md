@@ -9,6 +9,7 @@
 4) 4 sum (leetcode) -> Run outerloops for 1st and 2nd elements. Find 3rd and 4th using 2 pointers method. Handle the duplicate condition at the ith loop , jth loop and also inside the 2 pointers method.
 5) 3 sum closest (leetcode) -> same like 3 sum . Calculate the sum and if sum<target -> start++ or end--. Always store the closest sum to the given target in some variable and compare for each case.
 6) Merge Two 2D Arrays by Summing Values (leetcode)
+7) Sort Array By Parity (leetcode)
 5) Merge overlapping intervals (leetcode)
 5) Count increasing subarrays (gfg)
 6) Remove duplicates in sorted array (leetcode) 
