@@ -8,6 +8,7 @@
 3) 3 sum (leetcode) 
 4) 4 sum (leetcode) 
 5) 3 sum closest (leetcode)
+6) Merge Two 2D Arrays by Summing Values (leetcode)
 5) Merge overlapping intervals (leetcode)
 5) Count increasing subarrays (gfg)
 6) Remove duplicates in sorted array (leetcode) 
