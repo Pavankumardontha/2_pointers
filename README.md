@@ -12,7 +12,7 @@
 5) Merge overlapping intervals (leetcode)
 5) Count increasing subarrays (gfg)
 6) Remove duplicates in sorted array (leetcode) 
-7) Merge sorted array (leetcode)
+7) Merge sorted array (leetcode) - Sort from back of nums1 most optimised without any extra space
 7) Max consecutive ones (leetcode)
 8) Move zeros (leetcode)
 9) Remove elements (leetcode)
@@ -26,7 +26,7 @@
 18) Maximum Matching of players with trainers (leetcode)
 19) watering plants (leetcode - not exactly 2 pointers)
 20) Watering plants-2 (leetcode)
-21) Container with most water (leetcode)
+21) Container with most water (leetcode) - Move in a direction whose height is less. if height[start]<height[end] -> increment start and vice versa. if both equal then do start++ and end--
 22) Trapping rain water - 1 (leetcode)
 21) Rotate array (not exactly two pointers leetcode)
 
