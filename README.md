@@ -10,6 +10,8 @@
 5) 3 sum closest (leetcode) -> same like 3 sum . Calculate the sum and if sum<target -> start++ or end--. Always store the closest sum to the given target in some variable and compare for each case.
 6) Merge Two 2D Arrays by Summing Values (leetcode)
 7) Sort Array By Parity (leetcode)
+8) Sort array by parity - 2 (leetcode) - Here take 2 pointers starting with an even and odd index and increment them by 2 till the condition is met. Swap the elements at the
+   point of condition failure.
 5) Merge overlapping intervals (leetcode)
 5) Count increasing subarrays (gfg)
 6) Remove duplicates in sorted array (leetcode) 
