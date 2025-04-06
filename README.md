@@ -12,6 +12,7 @@
 7) Sort Array By Parity (leetcode)
 8) Sort array by parity - 2 (leetcode) - Here take 2 pointers starting with an even and odd index and increment them by 2 till the condition is met. Swap the elements at the
    point of condition failure.
+9) Rearrange Array Elements by Sign (leetcode) - CANNOT BE SOLVED IN-PLACE. Should use extra space and its easy to solve.
 5) Merge overlapping intervals (leetcode)
 5) Count increasing subarrays (gfg)
 6) Remove duplicates in sorted array (leetcode) 
