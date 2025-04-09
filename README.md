@@ -15,7 +15,7 @@
 9) Rearrange Array Elements by Sign (leetcode) - CANNOT BE SOLVED IN-PLACE. Should use extra space and its easy to solve.
 5) Merge overlapping intervals (leetcode)
 5) Count increasing subarrays (gfg)
-6) Remove duplicates in sorted array (leetcode) 
+6) Remove duplicates in sorted array - 1 (leetcode) - keep start=0 and end=1 and check if a[start] == a[end]. If both are equal then increment the end. If not a[start] = a[end]
 7) Merge sorted array (leetcode) - Sort from back of nums1 most optimised without any extra space
 7) Max consecutive ones (leetcode)
 8) Move zeros (leetcode)
