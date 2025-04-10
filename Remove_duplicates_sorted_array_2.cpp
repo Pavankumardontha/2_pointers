@@ -55,3 +55,68 @@ public:
         return index_to_change;
     }
 };
+
+
+
+/* APPROACH-2 : 2 pointers */
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) 
+    {
+        /*
+        [2,3,3,3,3,4,4,4,4] -> correct ans = [2,3,3,4,4,4,4,4,4]
+         0,1,2,3,4,5,6,7,8
+        
+        we start with start=0 and end=1 and we iterate end till we find the an index where a[start] != a[end]
+
+        1) start=0 , end=1
+        [2,3,3,3,3,4,4,4,4]
+        start++ -> start=1 
+        end=1
+
+        2) start=1 , end=5 a[1] != a[5]
+        so our array now becomes
+        since end-start>=2 we have more than 2 duplicacy of element.
+        start=start+2  -> start=1+2 = 3 
+        a[start] = a[end]
+        final array : [2,3,3,4,3,4,4,4,4]
+
+        WE CANNOT MEASURE DUPLICACY JUST BY (end-start) !! follow the above case
+        */
+        int n = nums.size();
+        int k = 1; // allowed duplicacy for each element in nums array
+        int start = -1;
+        int end = 0;
+        int first_occurrance=0; // first occurance of new element index
+        while(start<n and end<n)
+        {
+            while(end<n and nums[first_occurrance]==nums[end])
+            end++;
+
+            if(end-first_occurrance>=k)
+            {
+                for(int i=0;i<k;i++)
+                {
+                    start++;
+                    nums[start] = nums[first_occurrance];
+                }
+            }
+            else
+            {
+                for(int i=0;i<(end-first_occurrance);i++)
+                {
+                    start++;
+                    nums[start] = nums[first_occurrance];
+                }
+            }
+            first_occurrance = end;
+        }
+        return start+1; // since we need to return the size
+    }
+};
+
+
+
+
+
+
