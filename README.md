@@ -20,7 +20,7 @@
 8) Merge sorted array (leetcode) - Sort from back of nums1 most optimised without any extra space
 7) Max consecutive ones (leetcode)
 8) Move zeros (leetcode)
-9) Remove elements (leetcode)
+9) Remove element (leetcode)
 10) Minimize maximum pair sum in array (leetcode) 
 11) Maximum distance between pair of values (leetcode)
 12) Find the Index of the First Occurrence in a String (leetcode)
