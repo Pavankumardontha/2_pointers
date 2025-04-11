@@ -35,7 +35,7 @@
 20) Watering plants-2 (leetcode)
 21) Container with most water (leetcode) - Move in a direction whose height is less. if height[start]<height[end] -> increment start and vice versa. if both equal then do start++ and end-- . Do not sort the array, we need to apply 2 pointers here on the non-sorted array.
 22) Trapping rain water - 1 (leetcode)
-21) Rotate array (not exactly two pointers leetcode)
+21) Rotate array (not exactly two pointers leetcode) - Reverse the entire array -> Reverse the first k elements -> Reverse the next remaining n-k elements.
 
 
 
