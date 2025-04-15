@@ -37,6 +37,9 @@
 22) Trapping rain water - 1 (leetcode)
 21) Rotate array (not exactly two pointers leetcode) - Reverse the entire array -> Reverse the first k elements -> Reverse the next remaining n-k elements.
 
+Not 2 pointers:
+1) Next greater element - III (leetcode)
+2) Next permutation (leetcode)
 
 
 
