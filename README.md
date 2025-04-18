@@ -24,22 +24,23 @@
 8) Move zeros 
 9) Apply Operations to an Array  - VERY IMPORTANT
 10) Minimum Length of String After Deleting Similar Ends
-11) Remove element
-12) Lexogrophically smallest palindrome
-13) Shortest Distance to a Character
-14) Make String a Subsequence Using Cyclic Increments
-15) Minimize maximum pair sum in array 
-16) Maximum distance between pair of values
-17) Find the Index of the First Occurrence in a String (leetcode)
-18) Valid Trinagle (both the approaches)
-19) Remove duplicate elements in sorted array 2
-20) K diff pairs in an array
-21) Append characters to make string subsequence 
-22) Maximum Matching of players with trainers
-23) watering plants (not exactly 2 pointers)
-24) Watering plants-2 
-25) Container with most water  - Move in a direction whose height is less. if height[start]<height[end] -> increment start and vice versa. if both equal then do start++ and end-- . Do not sort the array, we need to apply 2 pointers here on the non-sorted array.
-26) Trapping rain water - 1
+11) String compression
+12) Remove element
+13) Lexogrophically smallest palindrome
+14) Shortest Distance to a Character
+15) Make String a Subsequence Using Cyclic Increments
+16) Minimize maximum pair sum in array 
+17) Maximum distance between pair of values
+18) Find the Index of the First Occurrence in a String (leetcode)
+19) Valid Trinagle (both the approaches)
+20) Remove duplicate elements in sorted array 2
+21) K diff pairs in an array
+22) Append characters to make string subsequence 
+23) Maximum Matching of players with trainers
+24) watering plants (not exactly 2 pointers)
+25) Watering plants-2 
+26) Container with most water  - Move in a direction whose height is less. if height[start]<height[end] -> increment start and vice versa. if both equal then do start++ and end-- . Do not sort the array, we need to apply 2 pointers here on the non-sorted array.
+27) Trapping rain water - 1
 21) Rotate array (not exactly two pointers) - Reverse the entire array -> Reverse the first k elements -> Reverse the next remaining n-k elements.
 
 Not 2 pointers:
