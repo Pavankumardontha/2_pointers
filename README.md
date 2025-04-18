@@ -26,7 +26,7 @@
 10) Remove element
 11) Lexogrophically smallest palindrome
 12) Shortest Distance to a Character
-13) 
+13) Make String a Subsequence Using Cyclic Increments
 14) Minimize maximum pair sum in array 
 15) Maximum distance between pair of values
 16) Find the Index of the First Occurrence in a String (leetcode)
