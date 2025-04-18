@@ -26,23 +26,25 @@
 10) Remove element
 11) Lexogrophically smallest palindrome
 12) Shortest Distance to a Character
-13) Minimize maximum pair sum in array 
-14) Maximum distance between pair of values
-15) Find the Index of the First Occurrence in a String (leetcode)
-16) Valid Trinagle (both the approaches)
-17) Remove duplicate elements in sorted array 2
-18) K diff pairs in an array
-19) Append characters to make string subsequence 
-20) Maximum Matching of players with trainers
-21) watering plants (not exactly 2 pointers)
-22) Watering plants-2 
-23) Container with most water  - Move in a direction whose height is less. if height[start]<height[end] -> increment start and vice versa. if both equal then do start++ and end-- . Do not sort the array, we need to apply 2 pointers here on the non-sorted array.
-24) Trapping rain water - 1
+13) 
+14) Minimize maximum pair sum in array 
+15) Maximum distance between pair of values
+16) Find the Index of the First Occurrence in a String (leetcode)
+17) Valid Trinagle (both the approaches)
+18) Remove duplicate elements in sorted array 2
+19) K diff pairs in an array
+20) Append characters to make string subsequence 
+21) Maximum Matching of players with trainers
+22) watering plants (not exactly 2 pointers)
+23) Watering plants-2 
+24) Container with most water  - Move in a direction whose height is less. if height[start]<height[end] -> increment start and vice versa. if both equal then do start++ and end-- . Do not sort the array, we need to apply 2 pointers here on the non-sorted array.
+25) Trapping rain water - 1
 21) Rotate array (not exactly two pointers) - Reverse the entire array -> Reverse the first k elements -> Reverse the next remaining n-k elements.
 
 Not 2 pointers:
 1) Next greater element - III
-2) Next permutation 
+2) Next permutation
+3) DI string match
 
 
 
