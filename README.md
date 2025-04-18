@@ -25,22 +25,23 @@
 9) Apply Operations to an Array  - VERY IMPORTANT
 10) Minimum Length of String After Deleting Similar Ends
 11) String compression
-12) Remove element
-13) Lexogrophically smallest palindrome
-14) Shortest Distance to a Character
-15) Make String a Subsequence Using Cyclic Increments
-16) Minimize maximum pair sum in array 
-17) Maximum distance between pair of values
-18) Find the Index of the First Occurrence in a String (leetcode)
-19) Valid Trinagle (both the approaches)
-20) Remove duplicate elements in sorted array 2
-21) K diff pairs in an array
-22) Append characters to make string subsequence 
-23) Maximum Matching of players with trainers
-24) watering plants (not exactly 2 pointers)
-25) Watering plants-2 
-26) Container with most water  - Move in a direction whose height is less. if height[start]<height[end] -> increment start and vice versa. if both equal then do start++ and end-- . Do not sort the array, we need to apply 2 pointers here on the non-sorted array.
-27) Trapping rain water - 1
+12) Separate Black and White Balls - VERY VERY IMPORTANT
+13) Remove element
+14) Lexogrophically smallest palindrome
+15) Shortest Distance to a Character
+16) Make String a Subsequence Using Cyclic Increments
+17) Minimize maximum pair sum in array 
+18) Maximum distance between pair of values
+19) Find the Index of the First Occurrence in a String (leetcode)
+20) Valid Trinagle (both the approaches)
+21) Remove duplicate elements in sorted array 2
+22) K diff pairs in an array
+23) Append characters to make string subsequence 
+24) Maximum Matching of players with trainers
+25) watering plants (not exactly 2 pointers)
+26) Watering plants-2 
+27) Container with most water  - Move in a direction whose height is less. if height[start]<height[end] -> increment start and vice versa. if both equal then do start++ and end-- . Do not sort the array, we need to apply 2 pointers here on the non-sorted array.
+28) Trapping rain water - 1
 21) Rotate array (not exactly two pointers) - Reverse the entire array -> Reverse the first k elements -> Reverse the next remaining n-k elements.
 
 Not 2 pointers:
