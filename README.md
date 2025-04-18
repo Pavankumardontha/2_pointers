@@ -45,6 +45,7 @@ Not 2 pointers:
 1) Next greater element - III
 2) Next permutation
 3) DI string match
+4) Make String a Subsequence Using Cyclic Increments
 
 
 
